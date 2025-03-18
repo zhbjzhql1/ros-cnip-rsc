@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.ACTION_TOKEN }}
+#        with:
+#          token: ${{ secrets.ACTION_TOKEN }}
       - name: ros_cn_ip_update
         run: |
           bash -x script/update.sh
